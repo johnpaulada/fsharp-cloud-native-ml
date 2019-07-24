@@ -51,6 +51,7 @@ Add `export PATH=$HOME/.dotnet/tools:$PATH` to your `~/.zshrc` file.
 
 ## Roadmap
 
-- [ ] Add Tilt
+- [x] Add Tilt
 - [ ] Wrap Model in Suave
+- [ ] Add Docker
 - [ ] Add Helm
