@@ -40,7 +40,11 @@ $ dotnet add reference ../SampleBinaryClassification/SampleBinaryClassification.
 ```
 
 ```bash
-dotnet add package Microsoft.ML --version 1.0.0
+$ dotnet add package Microsoft.ML --version 1.0.0
+```
+
+```bash
+$ dotnet add package Suave
 ```
 
 ## Troubleshooting
@@ -49,9 +53,14 @@ dotnet add package Microsoft.ML --version 1.0.0
 
 Add `export PATH=$HOME/.dotnet/tools:$PATH` to your `~/.zshrc` file.
 
+```bash
+$ helm install --name fsharp-cloud-native-ml ./chart
+```
+
 ## Roadmap
 
 - [x] Add Tilt
-- [ ] Wrap Model in Suave
+- [x] Working Model
+- [ ] Wrap Model in Suave or GraphQL
 - [ ] Add Docker
 - [ ] Add Helm
