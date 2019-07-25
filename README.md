@@ -61,6 +61,7 @@ $ helm install --name fsharp-cloud-native-ml ./chart
 
 - [x] Add Tilt
 - [x] Working Model
-- [ ] Wrap Model in Suave or GraphQL
-- [ ] Add Docker
+- [x] Wrap Model in Suave
+- [ ] Add Dockerfile
 - [ ] Add Helm
+- [ ] Add Docs
