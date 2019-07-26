@@ -36,4 +36,6 @@ $ helm install --name fsharp-cloud-native-ml ./chart
 ## Roadmap
 
 - [ ] Add Helm Ingress
+- [ ] Add Health Checks
 - [ ] Add Docs
+- [ ] Add Monitoring (Prometheus, Grafana)
