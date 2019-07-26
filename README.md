@@ -1,33 +1,15 @@
-# F\# Cloud Native ML API
+# F\# Cloud Native ML
 
-```bash
-$ dotnet new sln -o App
-```
+## Prerequisites
 
-```bash
-$ dotnet new classlib -lang F# -o src/Library
-```
+1. [.NET Framework](https://dotnet.microsoft.com/download)
+2. Docker
+3. Kubernetes
 
-```bash
-$ dotnet add src/Library/Library.fsproj package Microsoft.ML
-```
+## Creating the Code
 
-```bash
-$ dotnet new console -lang F# -o src/App
-```
-
-```bash
-$ dotnet add src/App/App.fsproj reference src/Library/Library.fsproj
-```
-
-```bash
-$ dotnet sln add src/App/App.fsproj
-```
-
-```bash
-$ cd src/App
-$ dotnet run HELLO WORLD
-```
+- [Create F# Project](https://docs.microsoft.com/en-us/dotnet/fsharp/get-started/get-started-command-line)
+- [ML .NET CLI](https://dotnet.microsoft.com/learn/machinelearning-ai/ml-dotnet-get-started-tutorial/intro)
 
 ## AutoML Model Training with ML .NET CLI
 
@@ -37,14 +19,6 @@ $ mlnet auto-train --task binary-classification --dataset "wikipedia-detox-250-l
 
 ```bash
 $ dotnet add reference ../SampleBinaryClassification/SampleBinaryClassification.Model/
-```
-
-```bash
-$ dotnet add package Microsoft.ML --version 1.0.0
-```
-
-```bash
-$ dotnet add package Suave
 ```
 
 ## Troubleshooting
@@ -59,9 +33,5 @@ $ helm install --name fsharp-cloud-native-ml ./chart
 
 ## Roadmap
 
-- [x] Add Tilt
-- [x] Working Model
-- [x] Wrap Model in Suave
-- [ ] Add Dockerfile
-- [ ] Add Helm
+- [ ] Add Helm Ingress
 - [ ] Add Docs
